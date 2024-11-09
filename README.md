@@ -9,7 +9,6 @@
     <title>Portfolio - My Projects</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Link to the font -->
     <style> /* CSS */
-```css
         * {
             box-sizing: border-box; /* Sets box-sizing to include padding and border in width/height */
             margin: 0; /* Remove margin */
@@ -129,7 +128,6 @@
         footer p {
             color: #b0c4de; /* Text color */
         }
-```html
     </style>
 </head>
 <body id="top">
