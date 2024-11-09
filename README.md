@@ -9,6 +9,7 @@
     <title>Portfolio - My Projects</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Link to the font -->
     <style> /* CSS */
+```css
         * {
             box-sizing: border-box; /* Sets box-sizing to include padding and border in width/height */
             margin: 0; /* Remove margin */
@@ -128,6 +129,7 @@
         footer p {
             color: #b0c4de; /* Text color */
         }
+```html
     </style>
 </head>
 <body id="top">
@@ -139,13 +141,15 @@
         <div class="project"> <!-- Start of a project -->
             <img src="img/test.jpg"> <!-- Project image -->
             <div class="project-content"> <!-- Container for project content -->
-                <h2>Project 1</h2> <!-- Project title -->
-                <p>Text</p> <!-- Project description -->
-                <a href="--------------link------------------" target="_blank">Look on GitHub</a>
+                <<h2>This Web Site</h2>
+        	<p>The html and css code of this site.</p>
+                <a href="https://github.com/gabrielecossutta/gabrielecossutta.github.io?tab=readme-ov-file" target="_blank">Look on GitHub</a>
             </div>
             <div class="details"> <!-- Container for details level -->
+		<h3>Skills</h3> <!-- Title for details level -->
+                <p>HTML - CSS</p>
                 <h3>Level of Completion</h3> <!-- Title for details level -->
-                <p>1/10</p>
+                <p>10/10</p>
             </div>
         </div>
     </div>
