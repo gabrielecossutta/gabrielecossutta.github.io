@@ -1,4 +1,4 @@
-gabrielecossutta.github.io
+# https://gabrielecossutta.github.io/
 
 
 <!DOCTYPE html>
@@ -148,24 +148,6 @@ gabrielecossutta.github.io
                 <p>1/10</p>
             </div>
         </div>
-        <div class="project">
-            <img src="img/test.jpg">
-            <div class="project-content">
-                <h2>Project 2</h2>
-                <p>Text</p>
-                <a href="--------------link------------------" target="_blank">Look on GitHub</a>
-            </div>
-            <div class="details">
-                <h3>Skills</h3>
-                <p>C++</p>
-                <p>C#</p>
-                <h3>Level of Completion</h3>
-                <p>5/10</p>
-            </div>
-        </div>
-
-        <!-- Aggiungi altri progetti qui -->
-
     </div>
     <footer onclick="scrollToTop()">
         <p>Back to Top</p>
