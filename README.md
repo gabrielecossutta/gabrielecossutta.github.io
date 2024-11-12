@@ -296,7 +296,7 @@
             <p>Explore my portfolio! Check out my latest projects.</p>
         </header>
     
-        <!-- Icona per attivare/disattivare modalità notte/giorno -->
+        <!-- Theme Icon -->
         <img src="img/sun.png" class="dark-mode-toggle" onclick="toggleDarkMode()" id="darkModeIcon">
     
         <div class="container">
@@ -317,10 +317,10 @@
             </div>
         </div>
     
-        <footer onclick="scrollToTop()"> <!-- when clicked call the scrollToTop Script -->
-    <p><a href="https://github.com/gabrielecossutta" target="_blank" class="github-button">Visit my GitHub</a></p>
-    <p class="back-to-top-button">Back to Top</p>
-</footer>
+        <footer > <!-- when clicked call the scrollToTop Script -->
+            <p><a href="https://github.com/gabrielecossutta" target="_blank" class="github-button">Visit my GitHub</a></p>
+            <p class="back-to-top-button" onclick="scrollToTop()" >Back to Top  </p >
+        </footer>
     
         <script>
             // change icon from moon to sun
