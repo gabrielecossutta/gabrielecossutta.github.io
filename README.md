@@ -74,6 +74,7 @@
             .project:hover {
                 transform: translateY(-10px); /* Animation */
                 box-shadow: 0 16px 30px rgba(0, 0, 0, 0.2); /* Shadow */
+                transform: scale(1.25); /* Slightly scales up on hover */
             }
     
             .project img {
@@ -117,7 +118,7 @@
                 margin-top: 10px; /* Spacing */
                 align-self: center; /* alignment center */
             }
-    
+
             .project a:hover {
                 background-color: #d94d28; /* Button color on hover */
                 transform: scale(1.05); /* Slightly scales up on hover */
@@ -140,11 +141,49 @@
                 color: #b0c4de; /* Text color */
             }
     
+            .github-button {
+                padding: 10px 20px; /* Spacing */
+                background-color: #ef8354; /* Background color */
+                color: #ffffff; /* Text color */
+                border-radius: 30px; /* Rounds the edges */
+                font-weight: 600; /* Bold */
+                text-decoration: none; /* Removes underline */
+                display: inline-block; /* Allows to treat it as inline block */
+                transition: background-color 0.3s, transform 0.3s; /* Animation */
+            }
+
+            .github-button:hover {
+                background-color: #d94d28; /* BackgroundColor */
+                transform: scale(1.05); /* Slightly scales up on hover */
+            }
+
+            .back-to-top-button {
+                padding: 10px 20px; /* Spacing */
+                background-color: #ef8354; /* Background color */
+                color: #ffffff; /* Text color */
+                border-radius: 30px; /* Rounds the edges */
+                font-weight: 600; /* Bold */
+                text-decoration: none; /* Removes underline */
+                display: inline-block; /* Allows to treat it as inline block */
+                cursor: pointer; /* Change Cursor */
+                transition: background-color 0.3s, transform 0.3s; /* Animation */
+                text-align: center; /* Center Text */
+                margin-top: 10px; /* Spacing */
+            }
+            
+            .back-to-top-button:hover {
+                background-color: #d94d28; /* BackgroundColor */
+                transform: scale(1.05); /* Slightly scales up on hover */
+            }
+
             .light-mode { /* Light mode */
                 background-color: #f4f7fa; /* Background color */
                 color: #333333; /* Text color */
             }
-    
+            .light-mode .project a:hover {
+                background-color: #242d3f  ; /* Button color on hover */
+                transform: scale(1.05); /* Slightly scales up on hover */
+            }
             .light-mode header {
                 background: linear-gradient(90deg, #333f58, #ffffff);  /* Background color left to right*/
                 color: #000000; /* Text color */
@@ -179,7 +218,25 @@
             .light-mode .project a { 
                 background-color: #333f58; /* Background color */
             }
-    
+            
+            .light-mode .github-button{
+                background-color: #333f58; /* Button color on hover */
+            }
+
+            .light-mode .github-button:hover{
+                background-color: #242d3f; /* Button color on hover */
+                transform: scale(1.05); /* Slightly scales up on hover */
+            }
+
+            .light-mode .back-to-top-button{
+                background-color: #333f58; /* Button color on hover */
+            }
+
+            .light-mode .back-to-top-button:hover{
+                background-color: #242d3f; /* Button color on hover */
+                transform: scale(1.05); /* Slightly scales up on hover */
+            }
+
             .dark-mode-toggle { /* Change Theme icon */
                 position: absolute; /*Absolute position, no container*/
                 top: 20px; /* 20 pc from the top */
@@ -190,10 +247,10 @@
                 transition: transform 0.3s; /* Animation Timer */
             }
     
-            .dark-mode-toggle:hover { /* Animation */
+            .dark-mode-toggle:hover {
                 transform: scale(1.1); /* Scale image */
             }
-    
+
             footer {
                 margin-top: 10px; /* Puts a margin at the top */
                 padding: 20px; /* Spacing */
@@ -202,9 +259,8 @@
                 background: linear-gradient(90deg, #ef8354, #000000); /* Background color left to right*/
                 color: #b0c4de; /* Text Color */
                 font-size: 0.9em; /* Font Size */
-                cursor: pointer; /* Type of cursor*/
             }
-    
+            
             @media (max-width: 768px) { /* Setting for mobile */
 
                 header h1 {
@@ -245,7 +301,7 @@
     
         <div class="container">
 
-            <div class="project"> <!-- Start of a project -->
+             <div class="project"> <!-- Start of a project -->
                 <img src="img/image.jpg"> <!-- Project image -->
                 <div class="project-content"> <!-- Container for project content -->
                         <h2>Project</h2> <!-- Project title -->
@@ -259,10 +315,12 @@
                     <p>10/10</p>
                 </div>
             </div>
-
+        </div>
+    
         <footer onclick="scrollToTop()"> <!-- when clicked call the scrollToTop Script -->
-            <p>Back to Top</p>
-        </footer>
+    <p><a href="https://github.com/gabrielecossutta" target="_blank" class="github-button">Visit my GitHub</a></p>
+    <p class="back-to-top-button">Back to Top</p>
+</footer>
     
         <script>
             // change icon from moon to sun
