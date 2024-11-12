@@ -126,25 +126,26 @@
             color: #b0c4de; /* Text color */
         }
 
-	@media (max-width: 768px) {
+	@media (max-width: 768px) { /* additional setting for mobile device */
+	
     header h1 {
-        font-size: 2.5em;
+        font-size: 2.5em; /* use em to have responsive font size*/ 
     }
     header p {
         font-size: 1.2em;
     }
     .project {
-        flex-direction: column; /* Disposizione verticale per le immagini e il contenuto */
+        flex-direction: column; /* Vertical layout for vertical screen */
         align-items: center;
     }
     .project img {
-        max-width: 100%; /* L'immagine occupa tutto lo spazio disponibile */
-    }
+        max-width: 100%;   
+}
     .container {
-        padding: 0 10px; /* Distanziamento dal bordo sui dispositivi mobili */
+        padding: 0 10px; /* spacing */
     }
     footer {
-        font-size: 1em; /* Adatta la dimensione del testo del footer */
+        font-size: 1em;
     }
 }
 
