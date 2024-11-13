@@ -1,7 +1,9 @@
 
 ### :arrow_down: To the website :arrow_down:
 # https://gabrielecossutta.github.io/
+### :arrow_up: To the website ⬆️
 
+# HTML & CSS of the web site
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -126,6 +128,8 @@
     
             .details { /* Colori delle descrizioni e dei dettagli */
                 text-align: center; /* Centers the text*/
+                width: 250px; /* Width */
+                height: 170px; /* Height */
                 margin-left: 20px; /* Spacing */
                 color: #ef8354; /* Text color */
             }
