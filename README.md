@@ -58,7 +58,23 @@
                 flex-direction: column; /* alignment direction*/ 
                 gap: 30px; /* Space between projects */
             }
-    
+
+
+
+            .cv-button { /* Change Theme icon */
+                position: absolute; /*Absolute position, no container*/
+                top: 20px; /* 20 pc from the top */
+                left: 20px; /* 20 px from the left */
+                width: 30px; /* Icon width */
+                height: 30px; /* Icon height */
+                cursor: pointer; /* Type of cursor*/
+                transition: transform 0.3s; /* Animation Timer */
+            }
+
+            .cv-button:hover {
+                transform: scale(1.5);/* Slightly scales up on hover */
+            }
+            
             .project {
                 display: flex; /* Facilitate page alignment */
                 align-items: center; /* Vertically centers image and content */
@@ -130,7 +146,6 @@
                 text-align: center; /* Centers the text*/
                 width: 250px; /* Width */
                 height: 170px; /* Height */
-                margin-left: 20px; /* Spacing */
                 color: #ef8354; /* Text color */
             }
     
@@ -184,10 +199,12 @@
                 background-color: #f4f7fa; /* Background color */
                 color: #333333; /* Text color */
             }
+
             .light-mode .project a:hover {
                 background-color: #242d3f  ; /* Button color on hover */
                 transform: scale(1.05); /* Slightly scales up on hover */
             }
+
             .light-mode header {
                 background: linear-gradient(90deg, #333f58, #ffffff);  /* Background color left to right*/
                 color: #000000; /* Text color */
@@ -252,7 +269,7 @@
             }
     
             .dark-mode-toggle:hover {
-                transform: scale(1.1); /* Scale image */
+                transform: scale(1.5); /* Scale image */
             }
 
             footer {
@@ -299,7 +316,10 @@
             <h1>My Projects</h1>
             <p>Explore my portfolio! Check out my latest projects.</p>
         </header>
-    
+        <!-- CV Icon -->
+        <a href="img/CV.pdf" target="_blank" >
+            <img src="img/Bcontact.png" class="cv-button" id="contactIcon">
+        </a>
         <!-- Theme Icon -->
         <img src="img/sun.png" class="dark-mode-toggle" onclick="toggleDarkMode()" id="darkModeIcon">
     
