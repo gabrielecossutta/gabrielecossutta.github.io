@@ -7,8 +7,16 @@
          window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
          gtag('js', new Date());
+         gtag('consent', 'default', {
+  'ad_storage': 'denied',
+  'analytics_storage': 'denied'
+});
 
-         gtag('config', 'G-R4SJS18LSJ');
+gtag('config', 'G-R4SJS18LSJ', {
+  'allow_google_signals': false,
+  'allow_ad_personalization_signals': false
+});
+
          </script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -440,7 +448,33 @@
             </div>
 
         </div>
-    
+        <div id="cookie-banner" style="position:fixed;bottom:0;left:0;right:0;background:#222;color:#fff;padding:1em;text-align:center;z-index:9999;">
+            Questo sito utilizza Google Analytics per statistiche anonime. 
+            <button onclick="acceptCookies()" style="margin-left:10px;padding:5px 10px;">Accetta</button>
+          </div>
+          
+          <script>
+            function acceptCookies() {
+              localStorage.setItem("cookieAccepted", "yes");
+              document.getElementById("cookie-banner").style.display = "none";
+          
+              // Aggiorna il consenso
+              gtag('consent', 'update', {
+                'ad_storage': 'granted',
+                'analytics_storage': 'granted'
+              });
+            }
+          
+            // Nasconde il banner se l'utente ha già accettato
+            if (localStorage.getItem("cookieAccepted") === "yes") {
+              document.getElementById("cookie-banner").style.display = "none";
+              gtag('consent', 'update', {
+                'ad_storage': 'granted',
+                'analytics_storage': 'granted'
+              });
+            }
+          </script>
+          
         <footer > <!-- when clicked call the scrollToTop Script -->
             <p><a href="https://github.com/gabrielecossutta" target="_blank" class="github-button">Visit my GitHub</a></p>
             <p class="back-to-top-button" onclick="scrollToTop()" >Back to Top  </p >
